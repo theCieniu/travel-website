@@ -4,16 +4,19 @@
   padding: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 body {
-  width: 100vw;
-  overflow-x: hidden;
-  --dark: #111;
+  --dark: #4c6e97;
   --medium: #666670;
   --light: #fff;
   --color1: #9cce40;
   --color2: #32c8b3;
-  --bcgcolor: #c3c3c3;
-  font-family: ;
+  --bgcolor: #131c27;
+  font-size: 2rem;
+  font-family: 'Poppins', sans-serif;
   color: var(--dark);
 }
 
@@ -22,30 +25,122 @@ img {
 }
 
 a:link, a:visited {
-  color: (internal value);
+  color: white;
   text-decoration: none;
-  cursor: auto;
 }
 
 a:link:active, a:visited:active {
-  color: (internal value);
+  color: white;
+}
+
+button {
+  padding: 2rem 6rem;
+  background-color: var(--dark);
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 1.8rem;
+  cursor: pointer;
 }
 
 /*======= TYPOGRAPHY ===========*/
+h1 {
+  font-size: 2.6rem;
+}
+
+h2 {
+  font-size: 4.8rem;
+}
+
+h3 {
+  font-size: 3rem;
+  font-weight: 400;
+}
+
+h4,
+h5 {
+  font-size: 2.8rem;
+}
+
 /*======= NAVIGATION ===========*/
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
+.main-header {
+  color: white;
+  background-color: var(--bgcolor);
+}
 
+nav {
+  min-height: 10vh;
+  padding: 2rem;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+nav ul {
+  display: flex;
+  flex: 1 1 40rem;
+  justify-content: space-around;
+  list-style: none;
+}
+
+nav li {
+  padding: 0 1rem;
+}
+
+#logo {
+  flex: 1 1 40rem;
+  font-family: 'Pattaya', sans-serif;
+  font-weight: 400;
+}
+
+/*======= HERO ===========*/
+.hero {
+  min-height: 90vh;
+  background: linear-gradient(rgba(0, 0, 0, .8), transparent), url("imgs/landing-page-molo.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-bottom: 5rem;
+}
+
+.hero h3 {
+  padding: 4rem;
+}
+
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
 /*======= FOOTER  ===========*/
-
 footer {
   margin-top: auto;
 }
 
 /*======= MEDIA QUERY ===========*/
+@media screen and (max-width:932px) {
+  html {
+    font-size: 45%;
+  }
+
+  nav {
+    text-align: center;
+  }
+
+  #logo {
+    padding: 2rem;
+  }
+}
+
+/*======= ================= ===========*/
 @media (min-width:700px) {
   /*======= ================= ===========*/
   /*======= ================== ===========*/
