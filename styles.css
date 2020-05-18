@@ -1,0 +1,57 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  width: 100vw;
+  overflow-x: hidden;
+  --dark: #111;
+  --medium: #666670;
+  --light: #fff;
+  --color1: #9cce40;
+  --color2: #32c8b3;
+  --bcgcolor: #c3c3c3;
+  font-family: ;
+  color: var(--dark);
+}
+
+img {
+  width: 100%;
+}
+
+a:link, a:visited {
+  color: (internal value);
+  text-decoration: none;
+  cursor: auto;
+}
+
+a:link:active, a:visited:active {
+  color: (internal value);
+}
+
+/*======= TYPOGRAPHY ===========*/
+/*======= NAVIGATION ===========*/
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
+/*======= SECTION ===========*/
+
+/*======= FOOTER  ===========*/
+
+footer {
+  margin-top: auto;
+}
+
+/*======= MEDIA QUERY ===========*/
+@media (min-width:700px) {
+  /*======= ================= ===========*/
+  /*======= ================== ===========*/
+}
+
+@media (min-width:1000px) {
+  /*======= ================= ===========*/
+  /*======= ================== ===========*/
+}
