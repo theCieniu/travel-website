@@ -1,3 +1,5 @@
+/*======= GLOBAL STYLES ===========*/
+
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -11,12 +13,6 @@ html {
 body {
   --color1: #46a299;
   --color2: #132827;
-  /*
-  --medium: #663b34;
-  --light: #fff;
-  --colorZ: #9cce40;
-  --colorT: #32c8b3;
-  */
   font-size: 2rem;
   font-family: 'Poppins', sans-serif;
   color: white;
@@ -69,6 +65,9 @@ h5 {
 /*======= NAVIGATION ===========*/
 .main-header {
   background-color: var(--color2);
+  position:sticky;
+  top:0;
+  z-index: 99;
 }
 
 nav {
@@ -80,7 +79,7 @@ nav {
   justify-content: center;
   width: 90%;
   margin: 0 auto;
-}
+  }
 
 nav ul {
   display: flex;
@@ -117,7 +116,7 @@ nav li {
 /*======= locations SECTION ===========*/
 #locations {
   min-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, .6), transparent), url("imgs/gdansk-city.png");
+  background: linear-gradient(rgba(0, 0, 0, .6), transparent), url("imgs/gdansk-city.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -138,14 +137,12 @@ text-shadow: 2px 2px 15px #fff;
 
 }
 
-
-.locations-head h3 {
-
 /* background-clip doesn't work in Brave browser
+.locations-head h3 {
     background: linear-gradient(var(--color1), var(--color2));
     background-clip: text;
-   -webkit-text-fill-color: transparent; */
-}
+   -webkit-text-fill-color: transparent;
+} */
 
 .cloud {
   position: absolute;
@@ -169,7 +166,6 @@ text-shadow: 2px 2px 15px #fff;
   0% {
     transform: translate(0%, 0%);
   }
-
   100% {
     transform: translate(10%, -5%);
   }
@@ -179,7 +175,6 @@ text-shadow: 2px 2px 15px #fff;
   0% {
     transform: translate(0%, 0%) scale(1.5);
   }
-
   100% {
     transform: translate(10%, -10%) scale(1);
   }
@@ -232,15 +227,65 @@ text-shadow: 2px 2px 15px #fff;
   margin: 1rem 1rem 3rem;
 }
 
-/*======= SECTION ===========*/
-/*======= SECTION ===========*/
+/*=======  CONTACT FORM SECTION ===========*/
+#contact {
+  min-height: 100vh;
+  background: linear-gradient(rgba(0, 0, 0, .6), transparent), url("imgs/tatra-mountain-contact.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.contact-wrapper {
+  background-color: rgba(19, 40, 39, .8);
+  min-width: 50vw;
+  border-radius: 2rem;
+  text-align: center;
+
+}
+
+.contact-head {
+    padding: 2rem 0;
+}
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+    align-items: center;
+}
+
+.contact-form label {
+  padding: 2rem 0;
+  margin: 1rem;
+}
+
+.contact-form input {
+  margin-left: 2rem;
+  padding: 1rem 2rem;
+}
+
+.contact-form button {
+  margin: 3rem 0 0;
+  width: 100%;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
+}
+
 /*======= FOOTER  ===========*/
 footer {
   margin-top: auto;
-  background-color: var(--color1);
+  background-color: var(--color2);
   padding: 1rem;
   text-align: center;
-  font-size: 1.2rem;
+  font-size: 1.5rem;
+}
+
+footer i {
+  padding: 1rem;
 }
 
 /*======= MEDIA QUERY ===========*/
