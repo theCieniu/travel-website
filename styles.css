@@ -1,5 +1,4 @@
 /*======= GLOBAL STYLES ===========*/
-
 *, *::before, *::after {
   box-sizing: border-box;
   margin: 0;
@@ -65,8 +64,8 @@ h5 {
 /*======= NAVIGATION ===========*/
 .main-header {
   background-color: var(--color2);
-  position:sticky;
-  top:0;
+  position: sticky;
+  top: 0;
   z-index: 99;
 }
 
@@ -79,7 +78,7 @@ nav {
   justify-content: center;
   width: 90%;
   margin: 0 auto;
-  }
+}
 
 nav ul {
   display: flex;
@@ -133,8 +132,7 @@ nav li {
 
 .locations-head h2 {
   color: var(--color1);
-text-shadow: 2px 2px 15px #fff;
-
+  text-shadow: 2px 2px 15px #fff;
 }
 
 /* background-clip doesn't work in Brave browser
@@ -143,7 +141,6 @@ text-shadow: 2px 2px 15px #fff;
     background-clip: text;
    -webkit-text-fill-color: transparent;
 } */
-
 .cloud {
   position: absolute;
   top: 0;
@@ -166,6 +163,7 @@ text-shadow: 2px 2px 15px #fff;
   0% {
     transform: translate(0%, 0%);
   }
+
   100% {
     transform: translate(10%, -5%);
   }
@@ -175,6 +173,7 @@ text-shadow: 2px 2px 15px #fff;
   0% {
     transform: translate(0%, 0%) scale(1.5);
   }
+
   100% {
     transform: translate(10%, -10%) scale(1);
   }
@@ -237,7 +236,6 @@ text-shadow: 2px 2px 15px #fff;
   display: flex;
   align-items: center;
   justify-content: center;
-
 }
 
 .contact-wrapper {
@@ -245,17 +243,17 @@ text-shadow: 2px 2px 15px #fff;
   min-width: 50vw;
   border-radius: 2rem;
   text-align: center;
-
 }
 
 .contact-head {
-    padding: 2rem 0;
+  padding: 2rem 0;
 }
+
 .contact-form {
   display: flex;
   flex-direction: column;
   justify-content: center;
-    align-items: center;
+  align-items: center;
 }
 
 .contact-form label {
@@ -303,10 +301,8 @@ footer i {
   }
 }
 
-/*======= ================= ===========*/
+/*============  MEDIA QUERY =============*/
 @media (max-width:700px) {
-
-  /*======= ================= ===========*/
   .moving-cloud-1 {
     top: -10%;
   }
@@ -314,16 +310,10 @@ footer i {
   .moving-cloud-2 {
     height: 60vh;
   }
-
-  /*======= ================== ===========*/
 }
 
 @media (max-width:1300px) {
-
-  /*======= ================= ===========*/
   .moving-cloud-1 {
     height: 40vh;
   }
-
-  /*======= ================== ===========*/
 }
